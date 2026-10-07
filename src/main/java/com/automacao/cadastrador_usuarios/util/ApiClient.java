@@ -89,6 +89,7 @@ public class ApiClient {
             dados.put("observacao", texto(item, "observacao"));
             dados.put("setor", texto(item, "setor"));
             dados.put("ja_tem_acesso", String.valueOf(item.path("ja_tem_acesso").asBoolean(false)));
+            dados.put("desvincular_anterior", String.valueOf(item.path("desvincular_anterior").asBoolean(false)));
             dados.put("perfil", texto(item, "perfil"));
             dados.put("senha_padrao", texto(item, "senha_padrao"));
             dados.put("cpf", texto(item, "cpf"));
